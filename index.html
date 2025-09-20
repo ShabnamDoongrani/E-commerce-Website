@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar code -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SCLOThERS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" onclick="location.reload()">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#all-section">ALL</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:5500/checks.html#">Check</a></li>
+            <li><hr class="dropdown-divider"></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+      </ul>
+      <a href="http://127.0.0.1:5500/loginform.html"><img src="/Images/icons8-account-24.png" alt=""></a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+    </div>
+  </div>
+  <!-- Side Panel Box -->
+<div id="sidePanel" class="side-panel">
+  <div class="panel-content">
+    <span class="close-btn" onclick="closePanel()">&times;</span>
+    <h3>Your product is added ✅</h3>
+    <p>Thank you for shopping with SCLOThERS!</p>
+    <button class="btn btn-success" onclick="closePanel()">Continue Shopping</button>
+  </div>
+</div>
+</nav>
+<div style="text-align: center;">
+    <h1> <b>SCLOThERS</b></h1>
+</div>
+<!-- Silder Code -->
+ <div class="slider">
+        <div class="slides">
+          <img src="./Images/2.jpg" alt="Image 1">
+          <img src="./Images/000.webp" alt="Image 2">
+          <img src="./Images/9.webp" alt="Image 3">
+          <img src="./Images/F0835103999_ebe711e7-996d-46e0-9488-3e2df5829dfa.webp" alt="Image 4">
+        </div>
+      </div>
+      <section>
+        
+<div class="navbar">
+  <div class="nav-links">
+    <a href="#">All</a>
+    <a href="http://127.0.0.1:5500/basic.html">Basic</a>
+    <a href="http://127.0.0.1:5500/printed.html">Printed</a>
+    <a href="http://127.0.0.1:5500/checks.html#">Checks</a>
+  </div>
+</div>
+<br>
+      </section>
+      <div class="card-container" id="all-section">
+        <div class="card" style="width: 18rem;">
+  <img src="./Images/1.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Resort Collar Shirt</h5>
+    <p class="card-text">3 Colors | Relaxed Fit |</p>
+ <span class="old-price">Rs. 5,000</span>
+            <span class="new-price">Rs. 3,500</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="/Images/2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Striped Shirt</h5>
+    <p class="card-text">1 Color | Regular Fit |</p>
+ <span class="old-price">Rs. 3,000</span>
+            <span class="new-price">Rs. 2,500</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="/Images/3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Jacquard Striped Shirt</h5>
+    <p class="card-text">1 Color | Regular Fit </p>
+ <span class="old-price">Rs. 4,000</span>
+            <span class="new-price">Rs. 3,500</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="./Images/4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Checkered Shirt</h5>
+    <p class="card-text">2 Colors | Regular Fit |</p>
+ <span class="old-price">Rs. 3,000</span>
+            <span class="new-price">Rs. 1,500</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./Images/5.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Printed Shirt</h5>
+    <p class="card-text">2 Colors | Regular Fit |</p>
+ <span class="old-price">Rs. 4,490</span>a
+            <span class="new-price">Rs. 3,500</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./Images/6.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Viscose Blend Collar Shirt</h5>
+    <p class="card-text">3 Colors | Relaxed Fit |</p>
+ <span class="old-price">Rs. 5,000</span>
+            <span class="new-price">Rs. 3,500</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;" id="check">
+  <img src="./Images/7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Basic Oxford Shirt</h5>
+   <p class="card-text">2 Colors | Regular Fit |</p>
+   <span class="old-price">Rs. 5000</span>
+            <span class="new-price">Rs. 3500</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./Images/8.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Checkered Shirt</h5>
+    <p class="card-text">2 Colors | Regular Fit |</p>
+ <span class="old-price">Rs. 4000</span>
+            <span class="new-price">Rs. 3500</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="/Images/9.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Textured Basic Shirt</h5>
+   <p class="card-text">2 Colors | Regular Fit |</p>
+ <span class="old-price">Rs. 3,900</span>
+            <span class="new-price">Rs. 1,900</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./Images/10.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Resort Collar Shirt</h5>
+    <p class="card-text">1 Color | Relaxed Fit |</p>
+ <span class="old-price">Rs. 5,000</span>
+            <span class="new-price">Rs. 3,900</span><br>
+    <a href="#" class="btn btn-primary"  onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./Images/11.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mandarin Collar Shirt</h5>
+    <p class="card-text">1 Color | Relaxed Fit</p>
+ <span class="old-price">Rs. 4,000</span>
+            <span class="new-price">Rs. 3,500</span><br>
+    <a href="#" class="btn btn-primary" onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./Images/12.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Seersucker Collar Shirt</h5>
+    <p class="card-text">1 Color | Relaxed Fit | </p>
+ <span class="old-price">Rs. 4,400</span>
+            <span class="new-price">Rs. 3,500</span><br>
+    <a href="#" class="btn btn-primary" onclick="openPanel()">Add to Cart</a>
+  </div>
+</div>
+</div>
+<br> <br>
+ <section>
+<footer>
+    <div class="footer-container" id="about">
+        <!-- Left -->
+        <div class="footer-left">
+            <h1>SCLOThERS</h1>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"><img src="/Images/icons8-insta-30.png" alt=""></i></a>
+                <a href="#"><i class="fab fa-facebook"><img src="/Images/icons8-fb-30.png" alt=""></i></a>
+                <a href="mailto:example@email.com"><i class="fas fa-envelope"> <img src="/Images/icons8-email-30.png" alt=""></i></a>
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="footer-right">
+            <h3>About Our Company</h3>
+            <p>We provide high-quality services to our clients worldwide.</p>
+            <p>Services:  Men's Wear, Custom Tailoring, Seasonal Collections</p>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        &copy; 2025 Your Company. All rights reserved.
+    </div>
+</footer>
+ </section>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

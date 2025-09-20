@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    color: gray;
+    background-color: #f2f2f2;
+}
+
+/* ---------------- SLIDER ---------------- */
+.slider {
+   width: 95%;
+   height: 520px;
+   margin: 10px auto;
+   overflow: hidden;
+   position: relative;
+}
+.slides {
+   width: 400%;
+   height: 100%;
+   display: flex;
+   animation: slide 16s infinite;
+}
+.slides img {
+   width: 25%;
+   height: 100%;
+   object-fit: cover;
+}
+@keyframes slide {
+   0%,20% { transform: translateX(0); }
+   25%,45% { transform: translateX(-25%); }
+   50%,70% { transform: translateX(-50%); }
+   75%,95% { transform: translateX(-75%); }
+   100% { transform: translateX(0); }
+}
+
+/* ---------------- CARDS ---------------- */
+.card-container {
+  display: flex;       
+  gap: 20px;              
+  justify-content: center;
+  flex-wrap: wrap; 
+  cursor: pointer;       
+} 
+.card .old-price {
+   text-decoration: line-through;
+   color: gray;
+   margin-right: 10px;
+   font-size: 18px;
+}
+.card .new-price {
+   color: #e60000;
+   font-weight: bold;
+   font-size: 20px;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    background-color: #f8f8f8;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+    margin-left: auto; 
+    padding-right: 500px; 
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 50px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background-color: #636262;
+    color: #fff;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    flex-wrap: wrap;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #f39c12;
+}
+.footer-right h3 {
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+.footer-right p {
+    margin: 5px 0;
+    color: #ccc;
+}
+.footer-bottom {
+    background-color: #0f0f0f;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #595757;
+}
+
+/* ---------------- SIDE PANEL ---------------- */
+.side-panel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 9999;
+}
+.panel-content {
+  padding: 20px;
+  text-align: center;
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+@media (max-width: 1200px) {
+    .nav-links {
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider {
+        height: 350px;
+    }
+    .nav-links {
+        padding-right: 50px;
+    }
+    .nav-links a {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .nav-links {
+        flex-direction: column;
+        padding: 0;
+        margin: 20px 0 0 0;
+        align-items: center;
+    }
+    .nav-links a {
+        margin: 10px 0;
+    }
+    .slider {
+        height: 250px;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .slider {
+        height: 180px;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
+    .card .old-price,
+    .card .new-price {
+        font-size: 16px;
+    }
+    .footer-right h3 {
+        font-size: 16px;
+    }
+}
